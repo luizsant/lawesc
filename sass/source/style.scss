@@ -1,0 +1,178 @@
+@use 'variables';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    p {
+        text-align: justify;
+    }
+}   
+#titlehead {
+    
+    width: 100%;
+    background-color: rgb(39, 38, 41);
+    color: variables.$corPrimary;
+    
+
+    .navbar-brand {
+        
+        img {
+        width: 200px;
+        height: 90px;
+        }
+    }
+    .nav-pills {
+        .nav-link {
+            color: variables.$corPrimary;
+            font-weight: bold;
+        }       
+        .nav-link.active {
+            background-color: variables.$corPrimary;
+            color: variables.$corCBtn;
+        }
+    
+    }
+    .navbar-toggler {
+        background-color: rgb(77, 77, 77);
+    }
+}
+
+.tab-content img {
+    width: 100%; /* ou o valor fixo que preferir, ex: 300px */
+    height: auto; /* mantém a proporção da imagem */
+    max-height: 250px; /* limita a altura máxima da imagem, ajuste esse valor conforme necessário */
+    object-fit: cover; /* certifica-se de que a imagem cubra todo o espaço disponível sem distorção */
+}
+.carousel-item img {
+    width: 100%;
+    max-height: 540px; /* Substitua 500px pela altura que você deseja. */
+    overflow: hidden; /* Isso irá esconder qualquer conteúdo que exceda a altura máxima. */
+    object-fit: cover;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+.social-links li a {
+    text-decoration: none
+}
+.no-resize {
+        resize: none;
+    }
+.footer {
+    
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+#sobre-o-restaurante, #atuacao {
+    background-color: variables.$corCBtn;
+    
+    .nav-cardapio .nav-link, h2, h3, p {
+        color: variables.$corPrimary;
+    }
+}
+.nav-cardapio .nav-link.active {
+    background-color: variables.$corPrimary ;
+    color: variables.$corCBtn !important;
+}
+.nav-cardapio .nav-link:hover {
+    background-color: variables.$corPrimary ;
+    color: variables.$corCBtn !important;
+}
+.image-column img {
+    width: 100%;
+    height: 200px; /* Ajuste a altura desejada */
+    object-fit: cover;
+  }
+  #equipe {
+    background-color: variables.$corHeader;
+    img {
+        border-radius: 50%;
+        width: 400px; 
+        height: 400px
+    }
+    card-text {
+        max-height: 100px;
+        overflow: hidden;
+      }
+    
+      /* Rest of your CSS code */
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+  }
+  
+  .carousel-indicators li {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 5px;
+    height: 5px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    transition: background-color 0.6s ease;
+  }
+  
+  .carousel-indicators .active {
+    background-color: #e0e0e0;
+  }
+  
+  /* Increase height of card body to display more text */
+  .card-body {
+    height: 200px;
+    overflow-y: auto;
+    background-color: #c7c3c3;
+  }
+  .card {
+    background-color: #c7c3c3;
+  }
+  
+  }
+  
+  .enviar {
+    background-color: black;
+    color: white;
+    border: none;
+  }
+  
+  .enviar:hover {
+    background-color: #333333;
+    color: white;
+  }
+
+  .icon-color {
+    color: variables.$corHeader;
+  }
+
+  @media (max-width: 767px){
+    .carousel-item img {
+      height: 280px;
+    }
+  }
+  
